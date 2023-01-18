@@ -1,1 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+  --font-family: "Outfit", sans-serif;
+  --font-size-heading: 125%;
+  --font-size-paragraph: 93.75%;
+  --weight-regular: 400;
+  --weight-bold: 700;
+}
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-light-gray);
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-size: var(--font-size-heading);
+  font-weight: var(--weight-bold);
+}
+
+p {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--weight-regular);
+}
+
+.container {
+  width: 86%;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
+
+.component {
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
+  background-color: var(--color-white);
+}
+.component__image {
+  border-radius: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.component__heading {
+  width: 87%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.03125rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark-blue);
+}
+.component__paragraph {
+  width: 87%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0.03125rem;
+  margin-bottom: 2rem;
+  color: var(--color-grayish-blue);
+}
+
+.attribution {
+  visibility: hidden;
+}
